@@ -75,6 +75,7 @@ body::after{
 }
 #header .tagline{
   color:#666;font-size:12px;letter-spacing:3px;text-transform:uppercase;
+  text-align:center;
 }
 #header 
 
@@ -301,6 +302,8 @@ canvas{
   <span class="copied" id="copiedMsg">✓ Copied!</span>
 </div>
 
+<p style="color:#ff3b3b;font-size:11px;text-align:center;letter-spacing:0.5px;margin:10px 16px 0;">Everything in this game is fictional and has no relation to real people or organizations. It is for entertainment purposes only.</p>
+
 <!-- Header -->
 <div id="header">
   <!-- Custom logo: spaceship + bitcoin merged SVG -->
@@ -378,46 +381,46 @@ canvas{
     <rect x="88" y="62" width="6" height="3" rx="1" fill="#f7931a" opacity="0.4"/>
   </svg>
   <h1>CRYPTO INVADERS</h1>
-  <p class="tagline">Defend the Blockchain · Endless Blocks · Free to Play</p>
-  <p class="tagline">Difficulty level increases with each block. Progress and see the challenges that await you</p>
+  <p class="tagline">Defend the Blockchain&nbsp;-&nbsp;Endless Blocks&nbsp;-&nbsp;Free to Play</p>
+  <p class="tagline">Difficulty level increases with each block - Progress and see the challenges that await you</p>
 </div>
 
 <!-- Price ticker (decorative) -->
 <div id="ticker">
   <div id="tickerInner">
     <span class="up">BTC</span>
-    <span class="up">ETH</span>
-    <span class="dn">DOGE</span>
-    <span class="up">SOL</span>
-    <span class="dn">XRP</span>
-    <span class="up">BNB</span>
-    <span class="dn">ADA</span>
-    <span class="up">AVAX</span>
-    <span class="up">MATIC</span>
-    <span class="dn">DOT</span>
-    <span class="up">LINK</span>
-    <span class="up">UNI</span>
-    <span class="dn">TRX</span>
-    <span class="up">TON</span>
-    <span class="dn">LTC</span>
-    <span class="up">BCH</span>
+    <span class="up">NOVA</span>
+    <span class="dn">FLUX</span>
+    <span class="up">ORBX</span>
+    <span class="dn">QRKX</span>
+    <span class="up">PULS</span>
+    <span class="dn">NEXA</span>
+    <span class="up">VOLT</span>
+    <span class="up">CIPH</span>
+    <span class="dn">PRSM</span>
+    <span class="up">KRYP</span>
+    <span class="up">OMEG</span>
+    <span class="dn">IONX</span>
+    <span class="up">DRFT</span>
+    <span class="dn">ZENX</span>
+    <span class="up">VERT</span>
     <!-- duplicate for seamless loop -->
     <span class="up">BTC</span>
-    <span class="up">ETH</span>
-    <span class="dn">DOGE</span>
-    <span class="up">SOL</span>
-    <span class="dn">XRP</span>
-    <span class="up">BNB</span>
-    <span class="dn">ADA</span>
-    <span class="up">AVAX</span>
-    <span class="up">MATIC</span>
-    <span class="dn">DOT</span>
-    <span class="up">LINK</span>
-    <span class="up">UNI</span>
-    <span class="dn">TRX</span>
-    <span class="up">TON</span>
-    <span class="dn">LTC</span>
-    <span class="up">BCH</span>
+    <span class="up">NOVA</span>
+    <span class="dn">FLUX</span>
+    <span class="up">ORBX</span>
+    <span class="dn">QRKX</span>
+    <span class="up">PULS</span>
+    <span class="dn">NEXA</span>
+    <span class="up">VOLT</span>
+    <span class="up">CIPH</span>
+    <span class="dn">PRSM</span>
+    <span class="up">KRYP</span>
+    <span class="up">OMEG</span>
+    <span class="dn">IONX</span>
+    <span class="up">DRFT</span>
+    <span class="dn">ZENX</span>
+    <span class="up">VERT</span>
   </div>
 </div>
 
@@ -488,7 +491,7 @@ canvas{
     <a href="javascript:void(0)" onclick="startGame()">▶ Play Now</a>
     <a href="javascript:void(0)" onclick="copyAddr()">◎ Donate SOL</a>
   </div>
-  <p>© 2025 crypto-invaders.fun &nbsp;·&nbsp; Free to Play &nbsp;·&nbsp; No Ads &nbsp;·&nbsp; No Tracking</p>
+  <p style="word-wrap:break-word;">© 2026 https://crypto-invaders.github.io/cryptoinvaders/ &nbsp;·&nbsp; Free to Play &nbsp;·&nbsp; No Ads &nbsp;·&nbsp; No Tracking</p>
   <p style="margin-top:6px;color:var(--orange);">Built with ❤️ for the crypto community</p>
 </div>
 
@@ -579,7 +582,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     for(let i=0;i<cols;i++) drops.push({y:Math.random()*c.height/FONT|0, speed:0.4+Math.random()*0.7});
   }
   init(); window.addEventListener('resize',init);
-  const pool=['BTC','ETH','USDT','BNB','SOL','XRP','USDC','DOGE','ADA','TRX','TON','AVAX','SHIB','WBTC','LINK','DOT','BCH','NEAR','LTC','LEO','UNI','DAI','APT','ICP','PEPE','KAS','STX','ETC','HBAR','MNT','CRO','FIL','VET','RENDER','RNDR','IMX','ARB','OP','INJ','FTM','ATOM','GRT','THETA','ALGO','FLOW','SAND','MANA','XLM','EGLD','AAVE','QNT','RUNE','GALA','XMR','BTT','CFX','KAVA','EOS','MINA','XTZ','IOTA','NEO','ZEC','DASH','WAVES','BAT','CHZ','ENJ','ZIL','CELO','SUI','SEI','TIA','PYTH','JUP','WIF','BONK','POPCAT','MEW','BOME','NOT','DOGS','HMSTR','MAJOR','CATI','BLUM','X','PI','PNUT','ACT','TRUMP','MELANIA','ONDO','ENA','EIGEN','ETHFI','STRK','ALT','DYM','LISTA'];
+  const pool=['BTC','NOVA','PULA','ORBA','QRKA','FLXA','NEXA','VLTA','CIPA','ECHA','PRSA','KRYA','OMEA','IONA','DRFA','ZENA','VERA','ASTA','BLZA','CRXA','DYNA','ELXA','FRGA','GLXA','HLXA','IMPA','JOLA','KINA','LUMA','MTXA','NRGA','OPTA','PHXA','QSRA','RGXA','SPKA','TRNA','UMBA','VNXA','WLDA','XENA','YLDA','ZEPA','ARCA','BRKA','CLDA','DSKA','EQXA','FZNA','NOVX','PULX','ORBX','QRKX','FLXX','NEXX','VLTX','CIPX','ECHX','PRSX','KRYX','OMEX','IONX','DRFX','ZENX','VERX','ASTX','BLZX','CRXX','DYNX','ELXX','FRGX','GLXX','HLXX','IMPX','JOLX','KINX','LUMX','MTXX','NRGX','OPTX','PHXX','QSRX','RGXX','SPKX','TRNX','UMBX','VNXX','WLDX','XENX','YLDX','ZEPX','ARCX','BRKX','CLDX','DSKX','EQXX','FZNX','NOVO','PULO','ORBO'];
   function tick(){
     ctx2.fillStyle='rgba(0,0,0,0.055)';
     ctx2.fillRect(0,0,c.width,c.height);
@@ -620,23 +623,23 @@ let W=640,H=500;
 const logoCache={};
 function mkLogo(fn){const o=document.createElement('canvas');o.width=o.height=64;const c=o.getContext('2d');fn(c,32,32,26);return o;}
 function drawBTC(c,cx,cy,r){c.beginPath();c.arc(cx,cy,r,0,Math.PI*2);c.fillStyle='#f7931a';c.fill();c.strokeStyle='#fff';c.lineWidth=r*.1;const bx=cx-r*.12;c.beginPath();c.moveTo(bx,cy-r*.52);c.lineTo(bx,cy+r*.52);c.stroke();c.beginPath();c.moveTo(bx,cy-r*.52);c.lineTo(bx+r*.22,cy-r*.52);c.quadraticCurveTo(bx+r*.5,cy-r*.52,bx+r*.5,cy-r*.2);c.quadraticCurveTo(bx+r*.5,cy+r*.02,bx,cy+r*.02);c.stroke();c.beginPath();c.moveTo(bx,cy+r*.02);c.lineTo(bx+r*.26,cy+r*.02);c.quadraticCurveTo(bx+r*.56,cy+r*.02,bx+r*.56,cy+r*.28);c.quadraticCurveTo(bx+r*.56,cy+r*.52,bx,cy+r*.52);c.stroke();c.lineWidth=r*.08;c.beginPath();c.moveTo(bx-r*.06,cy-r*.58);c.lineTo(bx+r*.1,cy-r*.58);c.moveTo(bx-r*.06,cy+r*.58);c.lineTo(bx+r*.1,cy+r*.58);c.stroke();}
-function drawETH(c,cx,cy,r){c.beginPath();c.arc(cx,cy,r,0,Math.PI*2);c.fillStyle='#627eea';c.fill();c.beginPath();c.moveTo(cx,cy-r*.72);c.lineTo(cx+r*.44,cy-r*.08);c.lineTo(cx,cy+r*.18);c.lineTo(cx-r*.44,cy-r*.08);c.closePath();c.fillStyle='rgba(255,255,255,.9)';c.fill();c.beginPath();c.moveTo(cx,cy+r*.72);c.lineTo(cx+r*.44,cy+r*.08);c.lineTo(cx,cy+r*.18);c.lineTo(cx-r*.44,cy+r*.08);c.closePath();c.fillStyle='rgba(255,255,255,.6)';c.fill();}
-function drawBNB(c,cx,cy,r){c.beginPath();c.arc(cx,cy,r,0,Math.PI*2);c.fillStyle='#f3ba2f';c.fill();const s=r*.28;c.fillStyle='#fff';function sq(x,y){c.save();c.translate(x,y);c.rotate(Math.PI/4);c.fillRect(-s/2,-s/2,s,s);c.restore();}sq(cx,cy-r*.48);sq(cx,cy+r*.48);sq(cx-r*.48,cy);sq(cx+r*.48,cy);sq(cx,cy);c.strokeStyle='#fff';c.lineWidth=r*.08;c.beginPath();c.moveTo(cx,cy-r*.48);c.lineTo(cx+r*.48,cy);c.lineTo(cx,cy+r*.48);c.lineTo(cx-r*.48,cy);c.closePath();c.stroke();}
-function drawSOL(c,cx,cy,r){c.beginPath();c.arc(cx,cy,r,0,Math.PI*2);const g=c.createLinearGradient(cx-r,cy-r,cx+r,cy+r);g.addColorStop(0,'#9945ff');g.addColorStop(1,'#14f195');c.fillStyle=g;c.fill();c.fillStyle='#fff';const bw=r*1.1,bh=r*.18,gap=r*.28;for(let i=-1;i<=1;i++){c.save();c.translate(cx-bw/2+i*r*.08,cy+i*gap-bh/2);c.beginPath();c.moveTo(r*.15,0);c.lineTo(bw,0);c.lineTo(bw-r*.15,bh);c.lineTo(0,bh);c.closePath();c.fill();c.restore();}}
-function drawXRP(c,cx,cy,r){c.beginPath();c.arc(cx,cy,r,0,Math.PI*2);c.fillStyle='#00aae4';c.fill();c.lineWidth=r*.22;c.strokeStyle='#fff';c.lineCap='round';c.beginPath();c.moveTo(cx-r*.5,cy-r*.6);c.lineTo(cx+r*.5,cy+r*.6);c.stroke();c.beginPath();c.moveTo(cx+r*.5,cy-r*.6);c.lineTo(cx-r*.5,cy+r*.6);c.stroke();}
-function drawDOGE(c,cx,cy,r){c.beginPath();c.arc(cx,cy,r,0,Math.PI*2);c.fillStyle='#c2a633';c.fill();const bx=cx-r*.22;c.lineWidth=r*.13;c.strokeStyle='#fff';c.beginPath();c.moveTo(bx,cy-r*.56);c.lineTo(bx,cy+r*.56);c.stroke();c.beginPath();c.moveTo(bx,cy-r*.56);c.bezierCurveTo(bx+r*1.1,cy-r*.56,bx+r*1.1,cy+r*.56,bx,cy+r*.56);c.stroke();c.beginPath();c.moveTo(bx+r*.05,cy);c.lineTo(bx+r*.7,cy);c.stroke();}
-function drawADA(c,cx,cy,r){c.beginPath();c.arc(cx,cy,r,0,Math.PI*2);c.fillStyle='#0033ad';c.fill();c.fillStyle='#fff';[[0,-.68],[.38,-.34],[-.38,-.34],[.6,.1],[-.6,.1],[.32,.54],[-.32,.54],[0,.08]].forEach(([px,py])=>{c.beginPath();c.arc(cx+px*r,cy+py*r,py===.08?r*.14:r*.1,0,Math.PI*2);c.fill();});}
-function drawAVAX(c,cx,cy,r){c.beginPath();c.arc(cx,cy,r,0,Math.PI*2);c.fillStyle='#e84142';c.fill();c.fillStyle='#fff';c.beginPath();c.moveTo(cx,cy-r*.6);c.lineTo(cx+r*.62,cy+r*.52);c.lineTo(cx-r*.62,cy+r*.52);c.closePath();c.fill();c.fillStyle='#e84142';c.beginPath();c.moveTo(cx-r*.17,cy+r*.52);c.lineTo(cx+r*.17,cy+r*.52);c.lineTo(cx+r*.04,cy+r*.08);c.lineTo(cx-r*.04,cy+r*.08);c.closePath();c.fill();}
-function drawTON(c,cx,cy,r){c.beginPath();c.arc(cx,cy,r,0,Math.PI*2);c.fillStyle='#0088cc';c.fill();c.strokeStyle='#fff';c.lineWidth=r*.12;c.lineCap='round';c.beginPath();c.moveTo(cx-r*.55,cy-r*.12);c.lineTo(cx,cy-r*.62);c.lineTo(cx+r*.55,cy-r*.12);c.lineTo(cx,cy+r*.22);c.closePath();c.stroke();c.beginPath();c.moveTo(cx,cy+r*.22);c.lineTo(cx,cy+r*.68);c.stroke();}
-function drawMATIC(c,cx,cy,r){c.beginPath();c.arc(cx,cy,r,0,Math.PI*2);c.fillStyle='#8247e5';c.fill();c.strokeStyle='#fff';c.lineWidth=r*.12;c.lineJoin='round';c.beginPath();for(let i=0;i<6;i++){const a=Math.PI/2+i*(Math.PI*2/6);i===0?c.moveTo(cx+Math.cos(a)*r*.62,cy+Math.sin(a)*r*.62):c.lineTo(cx+Math.cos(a)*r*.62,cy+Math.sin(a)*r*.62);}c.closePath();c.stroke();c.beginPath();c.arc(cx,cy,r*.2,0,Math.PI*2);c.fillStyle='#fff';c.fill();}
-function drawDOT(c,cx,cy,r){c.beginPath();c.arc(cx,cy,r,0,Math.PI*2);c.fillStyle='#e6007a';c.fill();c.fillStyle='#fff';c.beginPath();c.arc(cx,cy,r*.18,0,Math.PI*2);c.fill();for(let i=0;i<6;i++){const a=i*(Math.PI*2/6);c.beginPath();c.arc(cx+Math.cos(a)*r*.52,cy+Math.sin(a)*r*.52,r*.13,0,Math.PI*2);c.fill();}}
-function drawLINK(c,cx,cy,r){c.beginPath();c.arc(cx,cy,r,0,Math.PI*2);c.fillStyle='#2a5ada';c.fill();c.strokeStyle='#fff';c.lineWidth=r*.18;c.lineJoin='round';c.lineCap='round';c.beginPath();[[0,-.65],[.56,-.32],[.56,.32],[0,.65],[-.56,.32],[-.56,-.32]].forEach(([px,py],i)=>i===0?c.moveTo(cx+px*r,cy+py*r):c.lineTo(cx+px*r,cy+py*r));c.closePath();c.stroke();}
-function drawUNI(c,cx,cy,r){c.beginPath();c.arc(cx,cy,r,0,Math.PI*2);c.fillStyle='#ff007a';c.fill();c.lineWidth=r*.13;c.strokeStyle='#fff';c.lineCap='round';c.beginPath();c.moveTo(cx-r*.38,cy-r*.3);c.lineTo(cx-r*.38,cy+r*.35);c.quadraticCurveTo(cx-r*.38,cy+r*.65,cx,cy+r*.65);c.quadraticCurveTo(cx+r*.38,cy+r*.65,cx+r*.38,cy+r*.35);c.lineTo(cx+r*.38,cy-r*.3);c.stroke();c.beginPath();c.moveTo(cx-r*.1,cy-r*.28);c.lineTo(cx,cy-r*.72);c.lineTo(cx+r*.1,cy-r*.28);c.stroke();}
-function drawTRX(c,cx,cy,r){c.beginPath();c.arc(cx,cy,r,0,Math.PI*2);c.fillStyle='#ef0027';c.fill();c.fillStyle='#fff';c.beginPath();c.moveTo(cx,cy-r*.68);c.lineTo(cx+r*.66,cy+r*.55);c.lineTo(cx-r*.66,cy+r*.55);c.closePath();c.fill();c.fillStyle='#ef0027';c.beginPath();c.moveTo(cx,cy-r*.12);c.lineTo(cx+r*.32,cy+r*.55);c.lineTo(cx-r*.32,cy+r*.55);c.closePath();c.fill();}
-function drawXLM(c,cx,cy,r){c.beginPath();c.arc(cx,cy,r,0,Math.PI*2);c.fillStyle='#7d00ff';c.fill();c.strokeStyle='#fff';c.lineWidth=r*.1;c.lineCap='round';for(let i=0;i<6;i++){const a=i*(Math.PI/3)-Math.PI/6;c.beginPath();c.moveTo(cx+Math.cos(a)*r*.15,cy+Math.sin(a)*r*.15);c.lineTo(cx+Math.cos(a)*r*.65,cy+Math.sin(a)*r*.65);c.stroke();}}
-function drawLTC(c,cx,cy,r){c.beginPath();c.arc(cx,cy,r,0,Math.PI*2);c.fillStyle='#bebebe';c.fill();c.strokeStyle='#fff';c.lineWidth=r*.13;c.lineCap='round';c.beginPath();c.moveTo(cx-r*.2,cy-r*.6);c.lineTo(cx-r*.2,cy+r*.58);c.lineTo(cx+r*.42,cy+r*.58);c.stroke();c.beginPath();c.moveTo(cx-r*.2,cy+r*.02);c.lineTo(cx+r*.22,cy-r*.18);c.stroke();}
-function drawBCH(c,cx,cy,r){c.beginPath();c.arc(cx,cy,r,0,Math.PI*2);c.fillStyle='#0ac18e';c.fill();c.strokeStyle='#fff';c.lineWidth=r*.1;const bx=cx-r*.1;c.beginPath();c.moveTo(bx,cy-r*.55);c.lineTo(bx,cy+r*.55);c.stroke();c.beginPath();c.moveTo(bx,cy-r*.5);c.lineTo(bx+r*.2,cy-r*.5);c.quadraticCurveTo(bx+r*.48,cy-r*.5,bx+r*.48,cy-r*.18);c.quadraticCurveTo(bx+r*.48,cy+r*.02,bx,cy+r*.02);c.stroke();c.beginPath();c.moveTo(bx,cy+r*.02);c.lineTo(bx+r*.24,cy+r*.02);c.quadraticCurveTo(bx+r*.54,cy+r*.02,bx+r*.54,cy+r*.28);c.quadraticCurveTo(bx+r*.54,cy+r*.52,bx,cy+r*.52);c.stroke();}
-const DFNS={BTC:drawBTC,ETH:drawETH,BNB:drawBNB,SOL:drawSOL,XRP:drawXRP,DOGE:drawDOGE,ADA:drawADA,AVAX:drawAVAX,TON:drawTON,MATIC:drawMATIC,DOT:drawDOT,LINK:drawLINK,UNI:drawUNI,TRX:drawTRX,XLM:drawXLM,LTC:drawLTC,BCH:drawBCH};
+function drawNOVA(c,cx,cy,r){c.beginPath();c.arc(cx,cy,r,0,Math.PI*2);c.fillStyle='#7c6fe0';c.fill();c.fillStyle='#fff';c.save();c.translate(cx,cy);for(let i=0;i<6;i++){c.rotate(Math.PI/3);c.beginPath();c.moveTo(0,-r*.72);c.lineTo(r*.14,-r*.18);c.lineTo(-r*.14,-r*.18);c.closePath();c.fill();}c.restore();}
+function drawPULS(c,cx,cy,r){c.beginPath();c.arc(cx,cy,r,0,Math.PI*2);c.fillStyle='#f0b429';c.fill();c.strokeStyle='#fff';c.lineWidth=r*.14;c.lineCap='round';c.lineJoin='round';c.beginPath();c.moveTo(cx-r*.6,cy);c.lineTo(cx-r*.25,cy);c.lineTo(cx-r*.1,cy-r*.4);c.lineTo(cx+r*.1,cy+r*.4);c.lineTo(cx+r*.25,cy);c.lineTo(cx+r*.6,cy);c.stroke();}
+function drawORBX(c,cx,cy,r){c.beginPath();c.arc(cx,cy,r,0,Math.PI*2);const g=c.createLinearGradient(cx-r,cy-r,cx+r,cy+r);g.addColorStop(0,'#9945ff');g.addColorStop(1,'#00b4d8');c.fillStyle=g;c.fill();c.strokeStyle='#fff';c.lineWidth=r*.1;c.beginPath();c.ellipse(cx,cy,r*.7,r*.32,0,0,Math.PI*2);c.stroke();c.beginPath();c.arc(cx,cy,r*.16,0,Math.PI*2);c.fillStyle='#fff';c.fill();}
+function drawQRKX(c,cx,cy,r){c.beginPath();c.arc(cx,cy,r,0,Math.PI*2);c.fillStyle='#00b4d8';c.fill();c.fillStyle='#fff';for(let i=0;i<3;i++){c.save();c.translate(cx,cy);c.rotate(i*Math.PI/3);c.beginPath();c.ellipse(0,0,r*.62,r*.22,0,0,Math.PI*2);c.strokeStyle='#fff';c.lineWidth=r*.09;c.stroke();c.restore();}c.beginPath();c.arc(cx,cy,r*.13,0,Math.PI*2);c.fill();}
+function drawFLUX(c,cx,cy,r){c.beginPath();c.arc(cx,cy,r,0,Math.PI*2);c.fillStyle='#e07a3f';c.fill();c.strokeStyle='#fff';c.lineWidth=r*.13;c.lineCap='round';c.beginPath();c.moveTo(cx-r*.55,cy-r*.2);c.quadraticCurveTo(cx-r*.15,cy-r*.5,cx+r*.15,cy-r*.1);c.quadraticCurveTo(cx+r*.5,cy+r*.25,cx+r*.55,cy+r*.4);c.stroke();c.beginPath();c.arc(cx+r*.55,cy+r*.35,r*.09,0,Math.PI*2);c.fillStyle='#fff';c.fill();}
+function drawNEXA(c,cx,cy,r){c.beginPath();c.arc(cx,cy,r,0,Math.PI*2);c.fillStyle='#3d5af1';c.fill();c.fillStyle='#fff';c.save();c.translate(cx,cy);c.beginPath();for(let i=0;i<6;i++){const a=i*Math.PI/3-Math.PI/2;const px=Math.cos(a)*r*.6,py=Math.sin(a)*r*.6;if(i===0)c.moveTo(px,py);else c.lineTo(px,py);}c.closePath();c.strokeStyle='#fff';c.lineWidth=r*.09;c.stroke();c.restore();}
+function drawVOLT(c,cx,cy,r){c.beginPath();c.arc(cx,cy,r,0,Math.PI*2);c.fillStyle='#ffd166';c.fill();c.fillStyle='#332200';c.beginPath();c.moveTo(cx+r*.1,cy-r*.62);c.lineTo(cx-r*.32,cy+r*.06);c.lineTo(cx-r*.02,cy+r*.06);c.lineTo(cx-r*.14,cy+r*.62);c.lineTo(cx+r*.36,cy-r*.12);c.lineTo(cx+r*.04,cy-r*.12);c.closePath();c.fill();}
+function drawCIPH(c,cx,cy,r){c.beginPath();c.arc(cx,cy,r,0,Math.PI*2);c.fillStyle='#06a0c4';c.fill();c.strokeStyle='#fff';c.lineWidth=r*.12;c.beginPath();c.arc(cx,cy-r*.1,r*.32,Math.PI*1.1,Math.PI*1.9);c.stroke();c.fillStyle='#fff';c.beginPath();c.roundRect(cx-r*.34,cy-r*.05,r*.68,r*.5,r*.08);c.fill();}
+function drawECHO(c,cx,cy,r){c.beginPath();c.arc(cx,cy,r,0,Math.PI*2);c.fillStyle='#a55eea';c.fill();c.strokeStyle='#fff';for(let i=1;i<=3;i++){c.globalAlpha=1-(i-1)*.28;c.lineWidth=r*.08;c.beginPath();c.arc(cx,cy,r*.22*i,0,Math.PI*2);c.stroke();}c.globalAlpha=1;}
+function drawPRSM(c,cx,cy,r){c.beginPath();c.arc(cx,cy,r,0,Math.PI*2);c.fillStyle='#e6519a';c.fill();c.fillStyle='rgba(255,255,255,.92)';c.beginPath();c.moveTo(cx,cy-r*.62);c.lineTo(cx+r*.58,cy+r*.42);c.lineTo(cx-r*.58,cy+r*.42);c.closePath();c.fill();c.strokeStyle='#e6519a';c.lineWidth=r*.05;c.beginPath();c.moveTo(cx,cy-r*.62);c.lineTo(cx,cy+r*.42);c.stroke();}
+function drawKRYP(c,cx,cy,r){c.beginPath();c.arc(cx,cy,r,0,Math.PI*2);c.fillStyle='#4361ee';c.fill();c.fillStyle='#fff';c.beginPath();c.moveTo(cx,cy-r*.6);c.lineTo(cx+r*.5,cy-r*.28);c.lineTo(cx+r*.5,cy+r*.14);c.quadraticCurveTo(cx+r*.5,cy+r*.52,cx,cy+r*.66);c.quadraticCurveTo(cx-r*.5,cy+r*.52,cx-r*.5,cy+r*.14);c.lineTo(cx-r*.5,cy-r*.28);c.closePath();c.fill();}
+function drawOMEG(c,cx,cy,r){c.beginPath();c.arc(cx,cy,r,0,Math.PI*2);c.fillStyle='#ff6b9d';c.fill();c.strokeStyle='#fff';c.lineWidth=r*.15;c.lineCap='round';c.beginPath();c.arc(cx,cy-r*.02,r*.42,Math.PI*.15,Math.PI*.85,false);c.stroke();c.beginPath();c.moveTo(cx-r*.5,cy+r*.42);c.lineTo(cx-r*.24,cy+r*.42);c.moveTo(cx+r*.24,cy+r*.42);c.lineTo(cx+r*.5,cy+r*.42);c.stroke();}
+function drawIONX(c,cx,cy,r){c.beginPath();c.arc(cx,cy,r,0,Math.PI*2);c.fillStyle='#f25f5c';c.fill();c.strokeStyle='#fff';c.lineWidth=r*.16;c.lineCap='round';c.beginPath();c.moveTo(cx,cy-r*.55);c.lineTo(cx,cy+r*.55);c.moveTo(cx-r*.55,cy);c.lineTo(cx+r*.55,cy);c.stroke();c.beginPath();c.arc(cx,cy,r*.14,0,Math.PI*2);c.fillStyle='#fff';c.fill();}
+function drawDRFT(c,cx,cy,r){c.beginPath();c.arc(cx,cy,r,0,Math.PI*2);c.fillStyle='#845ec2';c.fill();c.strokeStyle='#fff';c.lineWidth=r*.11;c.lineCap='round';c.beginPath();c.moveTo(cx-r*.5,cy-r*.22);c.quadraticCurveTo(cx+r*.3,cy-r*.5,cx+r*.5,cy-r*.05);c.stroke();c.beginPath();c.moveTo(cx-r*.4,cy+r*.15);c.quadraticCurveTo(cx+r*.2,cy-r*.05,cx+r*.5,cy+r*.35);c.stroke();}
+function drawZENX(c,cx,cy,r){c.beginPath();c.arc(cx,cy,r,0,Math.PI*2);c.fillStyle='#c4c4c4';c.fill();c.strokeStyle='#333';c.lineWidth=r*.07;c.beginPath();c.arc(cx,cy,r*.55,0,Math.PI*2);c.stroke();c.beginPath();c.arc(cx,cy,r*.16,0,Math.PI*2);c.fillStyle='#333';c.fill();}
+function drawVERT(c,cx,cy,r){c.beginPath();c.arc(cx,cy,r,0,Math.PI*2);c.fillStyle='#0fd68c';c.fill();c.fillStyle='#fff';c.beginPath();c.moveTo(cx,cy-r*.6);c.lineTo(cx+r*.52,cy+r*.3);c.lineTo(cx-r*.52,cy+r*.3);c.closePath();c.fill();c.fillStyle='#0fd68c';c.beginPath();c.arc(cx,cy-r*.6,r*.1,0,Math.PI*2);c.arc(cx+r*.52,cy+r*.3,r*.1,0,Math.PI*2);c.arc(cx-r*.52,cy+r*.3,r*.1,0,Math.PI*2);c.fill();}
+const DFNS={BTC:drawBTC,NOVA:drawNOVA,PULS:drawPULS,ORBX:drawORBX,QRKX:drawQRKX,FLUX:drawFLUX,NEXA:drawNEXA,VOLT:drawVOLT,CIPH:drawCIPH,ECHO:drawECHO,PRSM:drawPRSM,KRYP:drawKRYP,OMEG:drawOMEG,IONX:drawIONX,DRFT:drawDRFT,ZENX:drawZENX,VERT:drawVERT};
 Object.entries(DFNS).forEach(([k,v])=>{logoCache[k]=mkLogo(v);});
 // Reference Bitcoin coin img from logo for ship hull
 let coinShipImg = null;
@@ -650,7 +653,7 @@ function getCoinShipImg(){
 
 // Pre-load Bitcoin coin image for ship hull
 
-const COINS=[{sym:'ETH',color:'#627eea'},{sym:'BNB',color:'#f3ba2f'},{sym:'SOL',color:'#9945ff'},{sym:'XRP',color:'#00aae4'},{sym:'DOGE',color:'#c2a633'},{sym:'ADA',color:'#0033ad'},{sym:'AVAX',color:'#e84142'},{sym:'TON',color:'#0088cc'},{sym:'MATIC',color:'#8247e5'},{sym:'DOT',color:'#e6007a'},{sym:'LINK',color:'#2a5ada'},{sym:'UNI',color:'#ff007a'},{sym:'TRX',color:'#ef0027'},{sym:'XLM',color:'#7d00ff'},{sym:'LTC',color:'#bebebe'},{sym:'BCH',color:'#0ac18e'}];
+const COINS=[{sym:'NOVA',color:'#7c6fe0'},{sym:'PULS',color:'#f0b429'},{sym:'ORBX',color:'#9945ff'},{sym:'QRKX',color:'#00b4d8'},{sym:'FLUX',color:'#e07a3f'},{sym:'NEXA',color:'#3d5af1'},{sym:'VOLT',color:'#ffd166'},{sym:'CIPH',color:'#06a0c4'},{sym:'ECHO',color:'#a55eea'},{sym:'PRSM',color:'#e6519a'},{sym:'KRYP',color:'#4361ee'},{sym:'OMEG',color:'#ff6b9d'},{sym:'IONX',color:'#f25f5c'},{sym:'DRFT',color:'#845ec2'},{sym:'ZENX',color:'#c4c4c4'},{sym:'VERT',color:'#0fd68c'}];
 
 const SPECIALS=[
   {id:'extraLife',icon:'❤️',name:'+1 Life',color:'#ff4444',desc:'Gain one extra life.'},
@@ -1202,7 +1205,7 @@ class StarField {
     for (let i = 0; i < cols; i++) {
       const len = 8 + Math.floor(Math.random() * 14);
       const chars = [];
-      const pool = ['BTC','ETH','USDT','BNB','SOL','XRP','USDC','DOGE','ADA','TRX','TON','AVAX','SHIB','WBTC','LINK','DOT','BCH','NEAR','LTC','LEO','UNI','DAI','APT','ICP','PEPE','KAS','STX','ETC','HBAR','MNT','CRO','FIL','VET','ARB','OP','INJ','FTM','ATOM','GRT','THETA','ALGO','FLOW','SAND','MANA','XLM','EGLD','AAVE','QNT','RUNE','GALA','XMR','BTT','CFX','KAVA','EOS','MINA','XTZ','IOTA','NEO','ZEC','DASH','WAVES','BAT','CHZ','ENJ','ZIL','CELO','SUI','SEI','TIA','PYTH','JUP','WIF','BONK','POPCAT','MEW','BOME','NOT','DOGS','PNUT','TRUMP','ONDO','ENA','EIGEN','STRK','ALT','DYM','LISTA','RENDER','IMX','SKL','CKB','ROSE','ANKR','1INCH','COMP','SNX','YFI','UMA','SUSHI'];
+      const pool = ['BTC','NOVA','PULA','ORBA','QRKA','FLXA','NEXA','VLTA','CIPA','ECHA','PRSA','KRYA','OMEA','IONA','DRFA','ZENA','VERA','ASTA','BLZA','CRXA','DYNA','ELXA','FRGA','GLXA','HLXA','IMPA','JOLA','KINA','LUMA','MTXA','NRGA','OPTA','PHXA','QSRA','RGXA','SPKA','TRNA','UMBA','VNXA','WLDA','XENA','YLDA','ZEPA','ARCA','BRKA','CLDA','DSKA','EQXA','FZNA','NOVX','PULX','ORBX','QRKX','FLXX','NEXX','VLTX','CIPX','ECHX','PRSX','KRYX','OMEX','IONX','DRFX','ZENX','VERX','ASTX','BLZX','CRXX','DYNX','ELXX','FRGX','GLXX','HLXX','IMPX','JOLX','KINX','LUMX','MTXX','NRGX','OPTX','PHXX','QSRX','RGXX','SPKX','TRNX','UMBX','VNXX','WLDX','XENX','YLDX','ZEPX','ARCX','BRKX','CLDX','DSKX','EQXX','FZNX','NOVO','PULO','ORBO'];
       for (let j = 0; j < len; j++) chars.push(pool[Math.floor(Math.random()*pool.length)]);
       this.drops.push({
         x: i*STEP + 14,
@@ -1425,57 +1428,56 @@ class StarField {
 
 
 // ── BOSS SYSTEM ───────────────────────────────────────────────────────────────
-// Top 10 crypto exchanges (CoinGecko ranking): Binance, Coinbase, Kraken,
-// OKX, Bybit, Bitfinex, Gate.io, KuCoin, Bitstamp, HTX (Huobi)
+// 10 fictional exchange-style bosses with unique bullet patterns
 
 const BOSSES = [
   {
-    id:'binance', name:'BINANCE', color:'#f3ba2f', hp:300, bulletColor:'#f3ba2f',
+    id:'novax', name:'NOVAX', color:'#f3ba2f', hp:300, bulletColor:'#f3ba2f',
     shootPattern:'spread5',  // 5-way spread
     desc:'5-WAY SPREAD'
   },
   {
-    id:'coinbase', name:'COINBASE', color:'#0052ff', hp:260, bulletColor:'#4d94ff',
+    id:'vaultchain', name:'VAULTCHAIN', color:'#0052ff', hp:260, bulletColor:'#4d94ff',
     shootPattern:'aimed',    // always aims at player
     desc:'PRECISION AIMED'
   },
   {
-    id:'kraken', name:'KRAKEN', color:'#5741d9', hp:280, bulletColor:'#9980ff',
+    id:'deepsea', name:'DEEPSEA', color:'#5741d9', hp:280, bulletColor:'#9980ff',
     shootPattern:'spiral',   // rotating spiral
     desc:'SPIRAL STORM'
   },
   {
-    id:'okx', name:'OKX', color:'#ffffff', hp:240, bulletColor:'#cccccc',
+    id:'omnix', name:'OMNIX', color:'#ffffff', hp:240, bulletColor:'#cccccc',
     shootPattern:'cross',    // 4-direction cross
     desc:'CROSS FIRE'
   },
   {
-    id:'bybit', name:'BYBIT', color:'#f7a600', hp:270, bulletColor:'#ffcc44',
+    id:'bytevault', name:'BYTEVAULT', color:'#f7a600', hp:270, bulletColor:'#ffcc44',
     shootPattern:'wave',     // sine-wave bullets
     desc:'BLOCK CANNON'
   },
   {
-    id:'bitfinex', name:'BITFINEX', color:'#16b157', hp:250, bulletColor:'#22ee77',
+    id:'finexpro', name:'FINEXPRO', color:'#16b157', hp:250, bulletColor:'#22ee77',
     shootPattern:'shotgun',  // random burst
     desc:'SHOTGUN BURST'
   },
   {
-    id:'gateio', name:'GATE.IO', color:'#e40c5b', hp:290, bulletColor:'#ff4488',
+    id:'gatenet', name:'GATENET', color:'#e40c5b', hp:290, bulletColor:'#ff4488',
     shootPattern:'ring',     // full 360° ring
     desc:'FULL RING BLAST'
   },
   {
-    id:'kucoin', name:'KUCOIN', color:'#24ae8f', hp:260, bulletColor:'#33ddbb',
+    id:'kuvault', name:'KUVAULT', color:'#24ae8f', hp:260, bulletColor:'#33ddbb',
     shootPattern:'triple',   // 3-way + side bursts
     desc:'TRIPLE BURST'
   },
   {
-    id:'bitstamp', name:'BITSTAMP', color:'#00c4a0', hp:245, bulletColor:'#00ffcc',
+    id:'stampx', name:'STAMPX', color:'#00c4a0', hp:245, bulletColor:'#00ffcc',
     shootPattern:'laser',    // rapid single laser
     desc:'RAPID LASER'
   },
   {
-    id:'htx', name:'HTX', color:'#00b4e4', hp:275, bulletColor:'#44ddff',
+    id:'hextrade', name:'HEXTRADE', color:'#00b4e4', hp:275, bulletColor:'#44ddff',
     shootPattern:'boomerang', // bullets curve back
     desc:'BOOMERANG SHOT'
   },
@@ -1501,79 +1503,81 @@ function mkBossLogo(id, color) {
   c.fillStyle = '#fff';
   c.strokeStyle = '#fff';
 
-  if (id === 'binance') {
-    // BNB-style diamond pattern
-    const s = 14;
-    function sq(x,y){ c.save();c.translate(x,y);c.rotate(Math.PI/4);c.fillRect(-s/2,-s/2,s,s);c.restore(); }
-    sq(cx, cy-26); sq(cx, cy+26); sq(cx-26, cy); sq(cx+26, cy); sq(cx, cy);
-    c.lineWidth=3;c.beginPath();c.moveTo(cx,cy-26);c.lineTo(cx+26,cy);c.lineTo(cx,cy+26);c.lineTo(cx-26,cy);c.closePath();c.stroke();
-  } else if (id === 'coinbase') {
-    // C letter in circle
-    c.lineWidth = 7; c.lineCap = 'round';
-    c.beginPath(); c.arc(cx, cy, 26, Math.PI*0.3, Math.PI*1.7); c.stroke();
-    c.beginPath(); c.arc(cx, cy, 14, Math.PI*0.3, Math.PI*1.7); c.stroke();
-  } else if (id === 'kraken') {
-    // K tentacles / octopus style
+  // Original abstract geometric marks — one unique shape per boss id
+  if (id === 'novax') {
+    // Radiating star burst
     c.lineWidth = 4; c.lineCap = 'round';
     for(let i=0;i<8;i++){
       const a = i*Math.PI/4;
-      const x1=cx+Math.cos(a)*12, y1=cy+Math.sin(a)*12;
-      const x2=cx+Math.cos(a)*30, y2=cy+Math.sin(a)*30;
-      const mx=x2+Math.cos(a+0.8)*10, my=y2+Math.sin(a+0.8)*10;
-      c.beginPath(); c.moveTo(x1,y1); c.quadraticCurveTo(mx,my,x2,y2); c.stroke();
+      c.beginPath(); c.moveTo(cx+Math.cos(a)*14,cy+Math.sin(a)*14); c.lineTo(cx+Math.cos(a)*30,cy+Math.sin(a)*30); c.stroke();
     }
     c.beginPath(); c.arc(cx,cy,12,0,Math.PI*2); c.fill();
-  } else if (id === 'okx') {
-    // OKX: three squares
+  } else if (id === 'vaultchain') {
+    // Interlocking chain links
+    c.lineWidth = 6;
+    c.beginPath(); c.ellipse(cx-12,cy,14,20,0,0,Math.PI*2); c.stroke();
+    c.beginPath(); c.ellipse(cx+12,cy,14,20,0,0,Math.PI*2); c.stroke();
+  } else if (id === 'deepsea') {
+    // Wave rings
+    c.lineWidth = 4;
+    for(let i=0;i<3;i++){
+      c.beginPath(); c.arc(cx,cy+8-i*10,10+i*10,Math.PI*1.1,Math.PI*1.9); c.stroke();
+    }
+  } else if (id === 'omnix') {
+    // Triangle trio
     c.fillStyle = color === '#ffffff' ? '#000' : '#fff';
-    const sz = 14, gap = 4;
-    [[cx-sz-gap,cy-sz-gap],[cx+gap,cy-sz-gap],[cx-sz/2,cy+gap]].forEach(([x,y])=>{
-      c.fillRect(x,y,sz,sz);
+    [[cx,cy-24],[cx-22,cy+16],[cx+22,cy+16]].forEach(([x,y])=>{
+      c.beginPath(); c.moveTo(x,y-10); c.lineTo(x-9,y+8); c.lineTo(x+9,y+8); c.closePath(); c.fill();
     });
-  } else if (id === 'bybit') {
-    // B letter bold
-    c.lineWidth = 6; c.lineCap = 'round';
-    const bx = cx - 10;
-    c.beginPath(); c.moveTo(bx, cy-24); c.lineTo(bx, cy+24); c.stroke();
-    c.beginPath(); c.moveTo(bx,cy-24); c.lineTo(bx+12,cy-24);
-    c.quadraticCurveTo(bx+26,cy-24,bx+26,cy-10); c.quadraticCurveTo(bx+26,cy+2,bx,cy+2); c.stroke();
-    c.beginPath(); c.moveTo(bx,cy+2); c.lineTo(bx+14,cy+2);
-    c.quadraticCurveTo(bx+28,cy+2,bx+28,cy+14); c.quadraticCurveTo(bx+28,cy+26,bx,cy+26); c.stroke();
-  } else if (id === 'bitfinex') {
-    // Lightning bolt
+  } else if (id === 'bytevault') {
+    // Cube outline
+    c.lineWidth = 4; c.lineJoin='round';
+    c.beginPath();
+    c.moveTo(cx,cy-26); c.lineTo(cx+22,cy-12); c.lineTo(cx+22,cy+14); c.lineTo(cx,cy+28); c.lineTo(cx-22,cy+14); c.lineTo(cx-22,cy-12); c.closePath();
+    c.stroke();
+    c.beginPath(); c.moveTo(cx,cy-26); c.lineTo(cx,cy+2); c.moveTo(cx-22,cy-12); c.lineTo(cx,cy+2); c.moveTo(cx+22,cy-12); c.lineTo(cx,cy+2); c.stroke();
+  } else if (id === 'finexpro') {
+    // Bolt zigzag
     c.lineWidth = 5;
     c.beginPath(); c.moveTo(cx+8,cy-28); c.lineTo(cx-8,cy-2); c.lineTo(cx+6,cy-2); c.lineTo(cx-8,cy+28); c.stroke();
-  } else if (id === 'gateio') {
-    // Gate arch
-    c.lineWidth = 6; c.lineCap = 'round';
-    c.beginPath(); c.arc(cx, cy+4, 22, Math.PI, 0); c.stroke();
-    c.beginPath(); c.moveTo(cx-22,cy+4); c.lineTo(cx-22,cy+26); c.stroke();
-    c.beginPath(); c.moveTo(cx+22,cy+4); c.lineTo(cx+22,cy+26); c.stroke();
-    c.beginPath(); c.moveTo(cx-30,cy+26); c.lineTo(cx+30,cy+26); c.stroke();
-  } else if (id === 'kucoin') {
-    // K shape with rays
+  } else if (id === 'gatenet') {
+    // Hexagon frame
+    c.lineWidth = 5; c.lineJoin='round';
+    c.beginPath();
+    for(let i=0;i<6;i++){
+      const a = i*Math.PI/3 - Math.PI/2;
+      const x=cx+Math.cos(a)*26, y=cy+Math.sin(a)*26;
+      if(i===0)c.moveTo(x,y); else c.lineTo(x,y);
+    }
+    c.closePath(); c.stroke();
+  } else if (id === 'kuvault') {
+    // Three converging rays
     c.lineWidth = 5; c.lineCap = 'round';
     c.beginPath(); c.moveTo(cx-10,cy-26); c.lineTo(cx-10,cy+26); c.stroke();
     c.beginPath(); c.moveTo(cx-10,cy-4); c.lineTo(cx+18,cy-26); c.stroke();
     c.beginPath(); c.moveTo(cx-10,cy-4); c.lineTo(cx+18,cy+26); c.stroke();
-  } else if (id === 'bitstamp') {
-    // S shape
-    c.lineWidth = 6; c.lineCap = 'round';
-    c.beginPath(); c.arc(cx+2,cy-14,14,Math.PI*0.1,Math.PI*1.1,true); c.stroke();
-    c.beginPath(); c.arc(cx-2,cy+14,14,Math.PI*1.1,Math.PI*0.1,true); c.stroke();
-  } else if (id === 'htx') {
-    // H letter
-    c.lineWidth = 6; c.lineCap = 'round';
-    c.beginPath(); c.moveTo(cx-14,cy-26); c.lineTo(cx-14,cy+26); c.stroke();
-    c.beginPath(); c.moveTo(cx+14,cy-26); c.lineTo(cx+14,cy+26); c.stroke();
-    c.beginPath(); c.moveTo(cx-14,cy); c.lineTo(cx+14,cy); c.stroke();
+  } else if (id === 'stampx') {
+    // Concentric dot rings
+    c.lineWidth = 4;
+    c.beginPath(); c.arc(cx,cy,24,0,Math.PI*2); c.stroke();
+    c.beginPath(); c.arc(cx,cy,12,0,Math.PI*2); c.stroke();
+    c.beginPath(); c.arc(cx,cy,3,0,Math.PI*2); c.fillStyle='#fff'; c.fill();
+  } else if (id === 'hextrade') {
+    // Diamond cross
+    c.lineWidth = 5; c.lineCap='round';
+    c.beginPath(); c.moveTo(cx,cy-28); c.lineTo(cx+16,cy); c.lineTo(cx,cy+28); c.lineTo(cx-16,cy); c.closePath(); c.stroke();
+    c.beginPath(); c.moveTo(cx,cy-14); c.lineTo(cx,cy+14); c.stroke();
   }
 
   return o;
 }
 
 // Build all boss logos
-BOSSES.forEach(b => { bossLogoCache[b.id] = mkBossLogo(b.id, b.color); });
+
+// Build all boss logos
+// Only 5 distinct logo shapes shared across the 10 bosses (fire patterns/stats stay unique)
+const BOSS_LOGO_SHAPES = ['novax','vaultchain','deepsea','omnix','bytevault'];
+BOSSES.forEach((b,i) => { bossLogoCache[b.id] = mkBossLogo(BOSS_LOGO_SHAPES[i%BOSS_LOGO_SHAPES.length], b.color); });
 
 // Shuffled boss order — new every game
 let bossOrder = [];
@@ -1626,14 +1630,14 @@ function bossShoot(boss, playerX, playerY, waveNum) {
   };
 
   switch(boss.def.shootPattern) {
-    case 'spread5': { // Binance — 5-way fan downward
+    case 'spread5': { // NovaX — 5-way fan downward
       for(let i=-2;i<=2;i++) {
         const ang = Math.PI/2 + i*0.32;
         bullets.push(mkB(Math.cos(ang)*spd, Math.sin(ang)*spd, boss.def.bulletColor));
       }
       break;
     }
-    case 'aimed': { // Coinbase — always aims directly at player
+    case 'aimed': { // VaultChain — always aims directly at player
       const dx=playerX-bx, dy=playerY-by;
       const dist=Math.sqrt(dx*dx+dy*dy)||1;
       bullets.push(mkB(dx/dist*spd*1.3, dy/dist*spd*1.3, boss.def.bulletColor, 5));
@@ -1642,7 +1646,7 @@ function bossShoot(boss, playerX, playerY, waveNum) {
       bullets.push(mkB(Math.cos(ang2-0.35)*spd, Math.sin(ang2-0.35)*spd, boss.def.bulletColor, 3));
       break;
     }
-    case 'spiral': { // Kraken — spiral but biased downward
+    case 'spiral': { // DeepSea — spiral but biased downward
       boss.spiralAngle += 0.3;
       for(let i=0;i<3;i++) {
         const ang = boss.spiralAngle + i*(Math.PI*2/3);
@@ -1652,7 +1656,7 @@ function bossShoot(boss, playerX, playerY, waveNum) {
       }
       break;
     }
-    case 'cross': { // OKX — diagonal cross (not horizontal) + straight down
+    case 'cross': { // OmniX — diagonal cross (not horizontal) + straight down
       // Replace pure horizontal shots with diagonals aimed toward player area
       const diags = [
         [0.6, 1], [-0.6, 1],   // diagonal down-left, down-right
@@ -1665,7 +1669,7 @@ function bossShoot(boss, playerX, playerY, waveNum) {
       });
       break;
     }
-    case 'wave': { // Bybit — sine-wave, always angled down
+    case 'wave': { // ByteVault — sine-wave, always angled down
       boss.waveAngle += 0.4;
       for(let i=0;i<3;i++) {
         const sway = Math.sin(boss.waveAngle + i*1.2)*0.6;
@@ -1673,7 +1677,7 @@ function bossShoot(boss, playerX, playerY, waveNum) {
       }
       break;
     }
-    case 'shotgun': { // Bitfinex — downward cone burst
+    case 'shotgun': { // FinexPro — downward cone burst
       const count = 7 + Math.floor(Math.random()*3);
       for(let i=0;i<count;i++) {
         const ang = Math.PI*0.25 + Math.random()*Math.PI*0.5; // downward cone only
@@ -1682,7 +1686,7 @@ function bossShoot(boss, playerX, playerY, waveNum) {
       }
       break;
     }
-    case 'ring': { // Gate.io — 8-shot ring but only downward half + 2 angled up sides
+    case 'ring': { // GateNet — 8-shot ring but only downward half + 2 angled up sides
       const angs = [
         Math.PI/2,                          // straight down
         Math.PI/2+0.5, Math.PI/2-0.5,      // slight diagonals
@@ -1695,7 +1699,7 @@ function bossShoot(boss, playerX, playerY, waveNum) {
       });
       break;
     }
-    case 'triple': { // KuCoin — 3-way aimed + 2 wide diagonals
+    case 'triple': { // KuVault — 3-way aimed + 2 wide diagonals
       const dx=playerX-bx, dy=playerY-by;
       const a0=Math.atan2(dy,dx);
       [a0, a0+0.45, a0-0.45, a0+0.9, a0-0.9].forEach(ang=>{
@@ -1703,14 +1707,14 @@ function bossShoot(boss, playerX, playerY, waveNum) {
       });
       break;
     }
-    case 'laser': { // Bitstamp — tight downward laser cluster
+    case 'laser': { // StampX — tight downward laser cluster
       for(let i=0;i<5;i++) {
         const ang = Math.PI/2 + (i-2)*0.08;
         bullets.push(mkB(Math.cos(ang)*spd*1.6, Math.sin(ang)*spd*1.6, boss.def.bulletColor, 2));
       }
       break;
     }
-    case 'boomerang': { // HTX — bullets curve back
+    case 'boomerang': { // HexTrade — bullets curve back
       for(let i=0;i<3;i++) {
         const ang = Math.PI/4 + i*Math.PI/4;
         const b = mkB(Math.cos(ang)*spd*1.1, Math.sin(ang)*spd*1.1, boss.def.bulletColor, 4);
@@ -2320,7 +2324,7 @@ if(g.waveNum%50===0){
     g.bosses.push(_boss);
   }
   g.boss=g.bosses[0]; // primary boss (for compat)
-  const _label=_numBoss>1?`⚠️ ${_numBoss}× BOSS BLOCK ${g.waveNum}!`:`⚠️ BOSS BLOCK ${g.waveNum}!`;
+  const _label=_numBoss>1?`⚠️ ${_numBoss}× EXCHANGE BOSS ${g.waveNum}!`:`⚠️ EXCHANGE BOSS ${g.waveNum}!`;
   g.waveBanner={text:_label,timer:120};
   sndBossWarning();
   return;
