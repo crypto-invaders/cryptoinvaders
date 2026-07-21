@@ -388,39 +388,39 @@ canvas{
 <!-- Price ticker (decorative) -->
 <div id="ticker">
   <div id="tickerInner">
-    <span class="up">BTC</span>
-    <span class="up">NOVA</span>
-    <span class="dn">FLUX</span>
-    <span class="up">ORBX</span>
-    <span class="dn">QRKX</span>
-    <span class="up">PULS</span>
-    <span class="dn">NEXA</span>
-    <span class="up">VOLT</span>
-    <span class="up">CIPH</span>
-    <span class="dn">PRSM</span>
-    <span class="up">KRYP</span>
-    <span class="up">OMEG</span>
-    <span class="dn">IONX</span>
-    <span class="up">DRFT</span>
-    <span class="dn">ZENX</span>
-    <span class="up">VERT</span>
+    <span class="up">$BTC</span>
+    <span class="up">$NOVA</span>
+    <span class="dn">$FLUX</span>
+    <span class="up">$ORBX</span>
+    <span class="dn">$QRKX</span>
+    <span class="up">$PULS</span>
+    <span class="dn">$NEXA</span>
+    <span class="up">$VOLT</span>
+    <span class="up">$CIPH</span>
+    <span class="dn">$PRSM</span>
+    <span class="up">$KRYP</span>
+    <span class="up">$OMEG</span>
+    <span class="dn">$IONX</span>
+    <span class="up">$DRFT</span>
+    <span class="dn">$ZENX</span>
+    <span class="up">$VERT</span>
     <!-- duplicate for seamless loop -->
-    <span class="up">BTC</span>
-    <span class="up">NOVA</span>
-    <span class="dn">FLUX</span>
-    <span class="up">ORBX</span>
-    <span class="dn">QRKX</span>
-    <span class="up">PULS</span>
-    <span class="dn">NEXA</span>
-    <span class="up">VOLT</span>
-    <span class="up">CIPH</span>
-    <span class="dn">PRSM</span>
-    <span class="up">KRYP</span>
-    <span class="up">OMEG</span>
-    <span class="dn">IONX</span>
-    <span class="up">DRFT</span>
-    <span class="dn">ZENX</span>
-    <span class="up">VERT</span>
+    <span class="up">$BTC</span>
+    <span class="up">$NOVA</span>
+    <span class="dn">$FLUX</span>
+    <span class="up">$ORBX</span>
+    <span class="dn">$QRKX</span>
+    <span class="up">$PULS</span>
+    <span class="dn">$NEXA</span>
+    <span class="up">$VOLT</span>
+    <span class="up">$CIPH</span>
+    <span class="dn">$PRSM</span>
+    <span class="up">$KRYP</span>
+    <span class="up">$OMEG</span>
+    <span class="dn">$IONX</span>
+    <span class="up">$DRFT</span>
+    <span class="dn">$ZENX</span>
+    <span class="up">$VERT</span>
   </div>
 </div>
 
@@ -446,7 +446,6 @@ canvas{
       <div id="lbContainer"></div>
       <div style="margin-top:14px;display:flex;gap:8px;flex-wrap:wrap;justify-content:center;">
         <button onclick="startGame()">▶ LAUNCH</button>
-        <button class="sec" onclick="showLeaderboard()">🏆 LEADERBOARD</button>
       </div>
     </div>
 
@@ -489,7 +488,7 @@ canvas{
 <div id="footer">
   <div class="footerLinks">
     <a href="javascript:void(0)" onclick="startGame()">▶ Play Now</a>
-    <a href="javascript:void(0)" onclick="copyAddr()">◎ Donate SOL</a>
+    <a href="javascript:void(0)" onclick="copyAddrFromFooter()" id="footerDonateLink">◎ Donate SOL</a>
   </div>
   <p style="word-wrap:break-word;">© 2026 https://crypto-invaders.github.io/cryptoinvaders/ &nbsp;·&nbsp; Free to Play &nbsp;·&nbsp; No Ads &nbsp;·&nbsp; No Tracking</p>
   <p style="margin-top:6px;color:var(--orange);">Built with ❤️ for the crypto community</p>
@@ -612,6 +611,20 @@ function copyAddr(){
   });
   const msg=document.getElementById('copiedMsg');
   msg.classList.add('show');setTimeout(()=>msg.classList.remove('show'),2000);
+}
+
+function copyAddrFromFooter(){
+  copyAddr();
+  // Scroll to top donation bar so the user sees the copy confirmation
+  const bar=document.getElementById('donationBar');
+  if(bar) bar.scrollIntoView({behavior:'smooth',block:'center'});
+  // Also flash feedback directly on the footer link
+  const link=document.getElementById('footerDonateLink');
+  if(link){
+    const orig=link.textContent;
+    link.textContent='✓ Copied!';
+    setTimeout(()=>{link.textContent=orig;},2000);
+  }
 }
 
 // ── Canvas & game setup ───────────────────────────────────────────────────────
@@ -1175,7 +1188,16 @@ function sndBomb(){noise(.55,.38,150);tone(60,'sine',.55,.18);}
 function getBoard(){try{return JSON.parse(localStorage.getItem('cryptoInvaders_v1')||'[]');}catch(e){return[];}}
 function saveBoard(b){try{localStorage.setItem('cryptoInvaders_v1',JSON.stringify(b));}catch(e){}}
 function addScore(name,score,wave){const b=getBoard();b.push({name:name.toUpperCase().slice(0,12),score,wave});b.sort((a,c)=>c.score-a.score);saveBoard(b.slice(0,10));}
-function renderLB(el,limit=6){const b=getBoard();if(!b.length){el.innerHTML='<div class="lb"><h3>🏆 LEADERBOARD</h3><div style="color:#555;font-size:11px;padding:6px;">No scores yet — be first!</div></div>';return;}const rk=['🥇','🥈','🥉'],cl=['gold','silver','bronze'];let h='<div class="lb"><h3>🏆 LEADERBOARD</h3>';b.slice(0,limit).forEach((e,i)=>{h+=`<div class="lb-row ${i<3?cl[i]:'normal'}"><span class="rank">${rk[i]||(i+1)}</span><span class="nm">${e.name}</span><span class="wv">B${e.wave}</span><span class="sc">${e.score.toLocaleString()}</span></div>`;});h+='</div>';el.innerHTML=h;}
+function renderLB(el,limit=6){
+  // Personal high score box (replaces leaderboard)
+  const b=getBoard();
+  if(!b.length){
+    el.innerHTML='<div class="lb"><h3>🏆 HIGH SCORE</h3><div style="color:#555;font-size:11px;padding:6px;">No score yet — play to set one!</div></div>';
+    return;
+  }
+  const best=b.reduce((a,c)=>c.score>a.score?c:a,b[0]);
+  el.innerHTML=`<div class="lb"><h3>🏆 HIGH SCORE</h3><div class="lb-row gold"><span class="rank">🥇</span><span class="nm">${best.name}</span><span class="wv">B${best.wave}</span><span class="sc">${best.score.toLocaleString()}</span></div></div>`;
+}
 function showLeaderboard(){renderLB(document.getElementById('lbContainer'),6);}
 
 // Star field
@@ -2544,7 +2566,7 @@ function drawShip(cx,cy,ps,sp){
 function showGameOver(){const ov=document.getElementById('overlay');ov.style.display='flex';ov.innerHTML=`<h1 style="color:var(--red)">💀 REKT!</h1><p style="color:#aaa;font-size:14px;margin:8px 0">Score: <b style="color:var(--orange)">${G.score.toLocaleString()}</b> &nbsp;|&nbsp; Block: <b style="color:var(--purple)">${G.waveNum}</b></p><p class="sub">The altcoins conquered the blockchain...</p><div id="lbContainer"></div><div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:10px"><button onclick="promptName()">💾 SAVE SCORE</button><button class="sec" onclick="startGame()">▶ RETRY</button></div>`;renderLB(document.getElementById('lbContainer'),5);}
 function promptName(){document.getElementById('overlay').style.display='none';document.getElementById('nameScore').textContent=`Score: ${G.score.toLocaleString()} | Block ${G.waveNum}`;document.getElementById('nameModal').style.display='flex';setTimeout(()=>document.getElementById('nameInput').focus(),100);}
 document.getElementById('nameInput').addEventListener('keydown',e=>{if(e.code==='Enter')saveScore();});
-function saveScore(){const name=document.getElementById('nameInput').value.trim()||'ANON';addScore(name,G.score,G.waveNum);document.getElementById('nameModal').style.display='none';document.getElementById('nameInput').value='';const ov=document.getElementById('overlay');ov.style.display='flex';ov.innerHTML=`<h1>🏆 HALL OF FAME</h1><div id="lbContainer"></div><div style="display:flex;gap:8px;margin-top:12px;flex-wrap:wrap;justify-content:center"><button onclick="startGame()">▶ PLAY AGAIN</button></div>`;renderLB(document.getElementById('lbContainer'),8);}
+function saveScore(){const name=document.getElementById('nameInput').value.trim()||'ANON';addScore(name,G.score,G.waveNum);document.getElementById('nameModal').style.display='none';document.getElementById('nameInput').value='';const ov=document.getElementById('overlay');ov.style.display='flex';ov.innerHTML=`<h1>🏆 HIGH SCORE</h1><div id="lbContainer"></div><div style="display:flex;gap:8px;margin-top:12px;flex-wrap:wrap;justify-content:center"><button onclick="startGame()">▶ PLAY AGAIN</button></div>`;renderLB(document.getElementById('lbContainer'),8);}
 showLeaderboard();
 </script>
 </body>
